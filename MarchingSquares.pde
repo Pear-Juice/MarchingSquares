@@ -70,67 +70,79 @@ void draw()
 
 void drawLine(PVector point, int colors)
 {
-  if (colors == 13) //1101
+  switch (colors)
   {
-    line(point.x + spacing / 2, point.y + spacing, point.x, point.y + spacing / 2);
-  }
-  if (colors == 14) //1110
-  {
-    line(point.x + spacing / 2, point.y + spacing, point.x + spacing, point.y + spacing / 2);
-  }
-  if (colors == 12) //1100
-  {
-    line(point.x, point.y + spacing / 2, point.x + spacing, point.y + spacing / 2);
-  }
-  if (colors == 11) //1011
-  {
-    line(point.x + spacing / 2, point.y, point.x + spacing, point.y + spacing / 2);
-  }
-  if (colors == 9) //1001
-  {
-    line(point.x, point.y + spacing / 2, point.x + spacing / 2, point.y);
-    line(point.x + spacing / 2, point.y + spacing, point.x + spacing, point.y + spacing / 2);
-  }
-  if (colors == 10) //1010
-  {
-    line(point.x + spacing / 2, point.y, point.x + spacing / 2, point.y + spacing);
-  }
-  if (colors == 8) //1000
-  {
-    line(point.x + spacing / 2, point.y, point.x, point.y + spacing / 2);
-  }
-  if (colors == 7) //0111
-  {
-    line(point.x + spacing / 2, point.y, point.x, point.y + spacing / 2);
-  }
-  if (colors == 5) //0101
-  {
-    line(point.x + spacing / 2, point.y, point.x + spacing / 2, point.y + spacing);
-  }
-  if (colors == 6) //0110
-  {
-    line(point.x + spacing / 2, point.y, point.x + spacing, point.y + spacing / 2);
-    line(point.x, point.y + spacing / 2, point.x + spacing / 2, point.y + spacing);
-  }
-  if (colors == 5) //0101
-  {
-    line(point.x + spacing / 2, point.y, point.x + spacing / 2, point.y + spacing);
-  }
-  if (colors == 4) //0100
-  {
-    line(point.x + spacing / 2, point.y, point.x + spacing, point.y + spacing / 2);
-  }
-  if (colors == 3) //0011
-  {
-    line(point.x, point.y + spacing / 2, point.x + spacing, point.y + spacing / 2);
-  }
-  if (colors == 1) //0001
-  {
-    line(point.x + spacing / 2, point.y + spacing, point.x + spacing, point.y + spacing / 2);
-  }
-  if (colors == 2) //0010
-  {
-    line(point.x + spacing / 2, point.y + spacing, point.x, point.y + spacing / 2);
+    
+    case 13: //1101
+      line(point.x + spacing / 2, point.y + spacing, point.x, point.y + spacing / 2);
+      break;
+    case 14: //1110
+    {
+      line(point.x + spacing / 2, point.y + spacing, point.x + spacing, point.y + spacing / 2);
+      break;
+    }
+    case 12: //1100
+    {
+      line(point.x, point.y + spacing / 2, point.x + spacing, point.y + spacing / 2);
+      break;
+    }
+    case 11: //1011
+    {
+      line(point.x + spacing / 2, point.y, point.x + spacing, point.y + spacing / 2);
+      break;
+    }
+    case 9: //1001
+    {
+      line(point.x, point.y + spacing / 2, point.x + spacing / 2, point.y);
+      line(point.x + spacing / 2, point.y + spacing, point.x + spacing, point.y + spacing / 2);
+      break;
+    }
+    case 10: //1010
+    {
+      line(point.x + spacing / 2, point.y, point.x + spacing / 2, point.y + spacing);
+      break;
+    }
+    case 8: //1000
+    {
+      line(point.x + spacing / 2, point.y, point.x, point.y + spacing / 2);
+      break;
+    }
+    case 7: //0111
+    {
+      line(point.x + spacing / 2, point.y, point.x, point.y + spacing / 2);
+      break;
+    }
+    case 6: //0110
+    {
+      line(point.x + spacing / 2, point.y, point.x + spacing, point.y + spacing / 2);
+      line(point.x, point.y + spacing / 2, point.x + spacing / 2, point.y + spacing);
+      break;
+    }
+    case 5: //0101
+    {
+      line(point.x + spacing / 2, point.y, point.x + spacing / 2, point.y + spacing);
+      break;
+    }
+    case 4: //0100
+    {
+      line(point.x + spacing / 2, point.y, point.x + spacing, point.y + spacing / 2);
+      break;
+    }
+    case 3: //0011
+    {
+      line(point.x, point.y + spacing / 2, point.x + spacing, point.y + spacing / 2);
+      break;
+    }
+    case 1: //0001
+    {
+      line(point.x + spacing / 2, point.y + spacing, point.x + spacing, point.y + spacing / 2);
+      break;
+    }
+    case 2: //0010
+    {
+      line(point.x + spacing / 2, point.y + spacing, point.x, point.y + spacing / 2);
+      break;
+    }
   }
 }
 
